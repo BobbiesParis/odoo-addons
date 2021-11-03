@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="login_as" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/bobbies_login_as/static/src/js/login_as.js"/>
+        </xpath>
+    </template>
+
+</odoo>

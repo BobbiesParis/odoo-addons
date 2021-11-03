@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+*~
+/.*
+.*
+!.gitignore
+!.editorconfig
+*.swp
+*.swo
+.vscode
+__pycache__

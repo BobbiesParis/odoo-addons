@@ -1,0 +1,77 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bobbies_login_as
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-01 08:04+0000\n"
+"PO-Revision-Date: 2021-11-01 08:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bobbies_login_as
+#: model:res.groups,comment:bobbies_login_as.group_login_as
+msgid "Allow to login as another user"
+msgstr "Permettre de se connecter en tant qu'un autre utilisateur"
+
+#. module: bobbies_login_as
+#: model:ir.model.fields,field_description:bobbies_login_as.field_ir_http__display_name
+#: model:ir.model.fields,field_description:bobbies_login_as.field_res_users__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: bobbies_login_as
+#: model:ir.model,name:bobbies_login_as.model_ir_http
+msgid "HTTP Routing"
+msgstr "Routage HTTP"
+
+#. module: bobbies_login_as
+#: model:ir.model.fields,field_description:bobbies_login_as.field_res_users__login_as_group
+msgid "Has 'Login as' group"
+msgstr "Dispose du groupe 'Se connecter en tant que'"
+
+#. module: bobbies_login_as
+#: model:ir.model.fields,field_description:bobbies_login_as.field_ir_http__id
+#: model:ir.model.fields,field_description:bobbies_login_as.field_res_users__id
+msgid "ID"
+msgstr ""
+
+#. module: bobbies_login_as
+#: model:ir.model.fields,field_description:bobbies_login_as.field_ir_http____last_update
+#: model:ir.model.fields,field_description:bobbies_login_as.field_res_users____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: bobbies_login_as
+#. openerp-web
+#: code:addons/bobbies_login_as/models/res_users.py:0
+#: code:addons/bobbies_login_as/static/src/xml/login_as.xml:0
+#: model:ir.model.fields,field_description:bobbies_login_as.field_res_users_login_as__login_as_user_id
+#: model:res.groups,name:bobbies_login_as.group_login_as
+#: model_terms:ir.ui.view,arch_db:bobbies_login_as.view_res_users_login_as_form
+#, python-format
+msgid "Login as"
+msgstr "Se connecter en tant que"
+
+#. module: bobbies_login_as
+#: model_terms:ir.ui.view,arch_db:bobbies_login_as.view_res_users_login_as_form
+msgid "Logout as"
+msgstr "Se déconnecter en tant que"
+
+#. module: bobbies_login_as
+#. openerp-web
+#: code:addons/bobbies_login_as/static/src/xml/login_as.xml:0
+#, python-format
+msgid "User icon"
+msgstr "Icône utilisateur"
+
+#. module: bobbies_login_as
+#: model:ir.model,name:bobbies_login_as.model_res_users
+msgid "Users"
+msgstr "Utilisateurs"
