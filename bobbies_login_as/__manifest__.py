@@ -7,11 +7,6 @@
     'version': '0.1',
     'license': 'LGPL-3',
     'category': 'Tools',
-    'description': """
-This module allows to login as another user in back-office / portal / website.
-
-For example, this option could be useful to check what's displayed for your employees / customers.
-    """,
     'author': 'Bobbies',
     'website': 'https://bobbies.com',
     'depends': [
