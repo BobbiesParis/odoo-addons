@@ -27,7 +27,7 @@ Login as
 ~~~~~~~~
 
 #. Open the user menu under your avatar
-#. Click on the menu 'Login as'
+#. Click on the menu 'Login as' - *if this menu does not appear, check if you have the 'Login as' group*
 #. Choose the user you want to login as
 #. Click on the button 'Login as'
 #. You are logged with the chosen user
