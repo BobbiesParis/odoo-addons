@@ -3,13 +3,17 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 
 {
-    'name': 'Bobbies Login as',
+    'name': 'Login as another user',
     'version': '0.1',
     'license': 'LGPL-3',
-    'category': 'Custom',
-    'description': "",
+    'category': 'Tools',
+    'description': """
+This module allows to login as another user in back-office / portal / website.
+
+For example, this option could be useful to check what's displayed for your employees / customers.
+    """,
     'author': 'Bobbies',
-    'website': 'https://www.bobbies.com',
+    'website': 'https://bobbies.com',
     'depends': [
         'web',
     ],
