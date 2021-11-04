@@ -3,7 +3,7 @@
 
     <t t-extend="UserMenu.Actions">
         <t t-jquery="a[data-menu='logout']" t-operation='before'>
-            <a t-if="widget &amp;&amp; widget.hasLoginAsGroup" role="menuitem" href="#" data-menu="loginAs" class="o_login_as dropdown-item">Login as</a>
+            <a role="menuitem" href="#" data-menu="loginAs" class="o_login_as dropdown-item">Login as</a>
         </t>
     </t>
 

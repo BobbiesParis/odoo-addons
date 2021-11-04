@@ -16,6 +16,14 @@ odoo.define('bobbies_login_as.LoginAs', function (require) {
             });
             return Promise.all([this._super.apply(this, arguments), ready]);
         },
+        start: function () {
+            var self = this;
+            return this._super.apply(this, arguments).then(() => {
+                if (!self.hasLoginAsGroup) {
+                    self.$('a[data-menu="loginAs"]').hide();
+                }
+            });
+        },
         _onMenuLoginAs: function() {
             return this.do_action({
                 type: 'ir.actions.act_window',
