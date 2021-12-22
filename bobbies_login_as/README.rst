@@ -5,9 +5,9 @@ Login as another user
 .. |badge2| image:: https://img.shields.io/badge/licence-LGPL--3-blue.png
     :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
     :alt: License: LGPL-3
-.. |badge3| image:: https://img.shields.io/badge/github-bobbies--paris%2Fodoo_addons-lightgray.png?logo=github
-    :target: https://github.com/BobbiesParis/odoo_addons/tree/14.0/bobbies_login_as
-    :alt: BobbiesParis/odoo_addons
+.. |badge3| image:: https://img.shields.io/badge/github-BobbiesParis%2Fodoo--addons-lightgray.png?logo=github
+    :target: https://github.com/BobbiesParis/odoo-addons/tree/14.0/bobbies_login_as
+    :alt: BobbiesParis/odoo-addons
 
 |badge2| |badge3|
 
