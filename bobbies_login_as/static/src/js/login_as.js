@@ -1,38 +1,29 @@
-odoo.define('bobbies_login_as.LoginAs', function (require) {
-    'use strict';
+import {Component, useState} from "@odoo/owl";
+import {_t} from "@web/core/l10n/translation";
+import {registry} from "@web/core/registry";
+import {user} from "@web/core/user";
 
-    var core = require('web.core');
-    var session = require('web.session');
-    var UserMenu = require('web.UserMenu');
-    var _t = core._t;
+export class LoginAsSystrayItem extends Component {
+  static props = [];
+  static template = "bobbies_login_as.SystrayItem";
 
-    UserMenu.include({
-        willStart: function () {
-            var self = this;
-            var ready = session.user_has_group(
-                'bobbies_login_as.group_login_as')
-            .then(hasGroup => {
-                self.hasLoginAsGroup = hasGroup;
-            });
-            return Promise.all([this._super.apply(this, arguments), ready]);
-        },
-        start: function () {
-            var self = this;
-            return this._super.apply(this, arguments).then(() => {
-                if (!self.hasLoginAsGroup) {
-                    self.$('a[data-menu="loginAs"]').hide();
-                }
-            });
-        },
-        _onMenuLoginAs: function() {
-            return this.do_action({
-                type: 'ir.actions.act_window',
-                name: _t('Login as'),
-                res_model: 'res.users.login_as',
-                views: [[false, 'form']],
-                target: 'new',
-            });
-        }
+  setup() {
+    const self = this;
+    self.state = useState({canLoginAs: false});
+    user.hasGroup("bobbies_login_as.group_login_as").then(function (canLoginAs) {
+      self.state.canLoginAs = canLoginAs;
     });
+  }
 
-});
+  onClick() {
+    this.env.services.action.doAction({
+      type: "ir.actions.act_window",
+      name: _t("Login as"),
+      res_model: "res.users.login_as",
+      views: [[false, "form"]],
+      target: "new",
+    });
+  }
+}
+
+registry.category("systray").add("LoginAs", {Component: LoginAsSystrayItem}, {sequence: 10});

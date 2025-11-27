@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<template xml:space="preserve">
-
-    <t t-extend="UserMenu.Actions">
-        <t t-jquery="a[data-menu='logout']" t-operation='before'>
-            <a role="menuitem" href="#" data-menu="loginAs" class="o_login_as dropdown-item">Login as</a>
-        </t>
-    </t>
-
-</template>
+<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+  <t t-name="bobbies_login_as.SystrayItem">
+    <div t-if="state.canLoginAs">
+      <button class="o_nav_entry" title="Login as" t-on-click="onClick">
+        <i class="fa fa-user-circle-o fa-lg" />
+      </button>
+    </div>
+  </t>
+</templates>

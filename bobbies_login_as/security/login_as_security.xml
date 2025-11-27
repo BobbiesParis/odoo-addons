@@ -1,11 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
-    <record id="group_login_as" model="res.groups">
-        <field name="name">Login as</field>
-        <field name="comment">Allow to login as another user</field>
-        <field name="category_id" ref="base.module_category_hidden"/>
-        <field name="users" eval="[(4, ref('base.user_admin'))]" />
-    </record>
-
+  <record id="group_login_as" model="res.groups">
+    <field name="name">Allow to login as another user</field>
+    <field name="user_ids" eval="[(4, ref('base.user_admin'))]" />
+  </record>
 </odoo>
